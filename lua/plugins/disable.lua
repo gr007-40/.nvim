@@ -1,3 +1,4 @@
+-- Disable certain lazyvim plugins
 local function disable(list)
   local ret = {}
   for _, p in ipairs(list) do
@@ -10,8 +11,8 @@ local function disable(list)
 end
 
 return disable({
-  "rcarriga/nvim-notify",
-  "folke/noice.nvim",
+  -- "rcarriga/nvim-notify",
+  -- "folke/noice.nvim",
   "folke/flash.nvim",
   "nvim-pack/nvim-spectre",
 })
